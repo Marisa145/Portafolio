@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root{
+  --header-height:60px;
+  --bg-color:#1F1D2C;
+  --body-font: 'Inter', sans-serif;
+  --font-color: #FFFFFF;
+  --big-font-desktop:80px;
+  --big-font-mobile:50px;
+  --big-font-size: 32px;
+  --normal-font-size:16px;
+  --small-font-size:14px;
+
+  --mr-1: 8px;
+  --mr-2: 16px;
+  --mr-3: 20px;
+  --mr-4: 26px;
+  --mr-5: 32px;
+  --mr-6:40px;
+
+  --z-fixed:100;
+  --z-modal:10;
+}
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bg-color);
+  font-family: var(--body-font);
+  color: var(--font-color);
+  font-size: var(--normal-font-size);
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #F1A600;
+}
+
+@media (min-width: 360px){
+  ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+  h1{
+    font-size: var(--big-font-mobile);
+  }
+  .hide {
+    display: block;
+    float: right;
+    overflow: hidden;
+  }
+  nav ul {
+  display: none;
+  text-align: right;
+  overflow: hidden;
+  }
+  .icon-menu {
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin: var(--mr-3);
+  }
+  ul li {
+    display: inline-block;
+    padding: 20px;
+    transition: all  250ms;
+  }
+  .section_uno{
+    text-align: center;
+    margin: var(--mr-4);
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  
+  }
+  .redes{
+   margin: var(--mr-4);
+   text-align: center;
+  }
+.social{
+  text-align: center;
+  display: flex;
+  margin-left: 30px;
+}
+body,
+.hide{
+  background-image: url('./vectores/Rectangle\ 34-1.svg');
+  background-repeat:no-repeat;
+  background-position: top right; 
+}
+span a{
+  color: #F1A600;
+}
+.section_dos{
+  background-image: url('./vectores/rectangle\ 33-1.svg');
+  text-align: center;
+  margin: var(--mr-1);
+}
+.section_tres{
+  text-align: center;
+}
+.primer_div{
+  display: flex;
+  columns: 3 ;
+  gap:10%;
+
+}
+
+.empresa{
+  display: inline-block;
+  margin-top: 10px;
+}
+.datos{
+  text-align: justify;
+  margin-right: 45px;
+  margin-top: 0;
+ 
+}
+.datos-un{
+  text-align: justify;
+  margin-right: 5px;
+}
+.años{
+  margin-top:30px;
+  text-align: center;
+}
+
+.div_len{
+  text-align: center;
+  background-image: url('./vectores/Rectangle\ 34-1.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50%;
+}
+.section_cinco{
+  text-align: center;
+  
+}
+
+footer {
+  text-align: center;
+  background-image: url('./vectores/Rectangle\ 34.svg');
+ 
+}
+.portafo{
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width: 800px){
+  body,
+  nav,
+  html
+
+{
+  background-image: url('./vectores/Rectangle\ 34-1.svg');
+  background-position: top right;
+  background-size: 30% ;
+}
+.hide{
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1F1D2C;
+  z-index: 100;
+  padding: 0;
+}
+
+nav ul {
+  background-color: #1F1D2C;
+  display: flex;
+  float: right;
+  width: 100%;
+  margin: 0;
+  
+   
+}
+ ul li{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+
+.section_uno{
+ columns: 2;
+ text-align: center;
+ margin: var(--mr-6);
+ 
+}
+h1{
+  font-size: var(--big-font-desktop);
+}
+.perfil{
+  float: right;
+}
+span a {
+  color: #F1A600;
+}
+.span{
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 35px;
+}
+.name{
+  text-align: center;
+  margin-top: 35px;
+}
+.redes{
+  display: grid;
+  columns: 3;
+}
+.redes_click{
+  width: 30px;
+  margin-right: 35px;
+  margin-top: 35px;
+}
+p{
+  margin-top: 35px;
+}
+
+.parrafos{
+  columns: 2; 
+}
+.section_tres{
+  text-align: center;
+}
+.primer_div{
+  text-align: center;
+  margin-left:25%;
+}
+.portafo{
+  margin-bottom: 0;
+}
+.parrafo_uno{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.port{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.portafo_tres{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.contacto{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.section_seis{
+  text-align: center;
+  background-image: url('./vectores/Rectangle\ 34.svg');
+}
+.div_len{
+  text-align: center;
+  background-image: url('./vectores/Rectangle\ 34-1.svg');
+  background-position: left;
+  background-size: 50%;
+}
+}
