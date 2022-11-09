@@ -94,11 +94,12 @@ ul li a:hover {
   .redes{
    margin: var(--mr-4);
    text-align: center;
+   justify-content: center;
   }
 .social{
   text-align: center;
   display: flex;
-  margin-left: 30px;
+  margin-left: 120px;
 }
 body,
 .hide{
@@ -231,6 +232,11 @@ span a {
 .redes{
   display: grid;
   columns: 3;
+}
+.social{
+  text-align: center;
+  display: flex;
+  margin-left: 50px;
 }
 .redes_click{
   width: 30px;
