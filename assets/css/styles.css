@@ -125,6 +125,7 @@ div{
 }
 .section_tres{
   text-align: center;
+  margin: var(--mr-1);
 }
 .primer_div{
   display: flex;
