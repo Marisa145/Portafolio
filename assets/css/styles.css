@@ -172,6 +172,17 @@ footer {
 }
 .portafo{
   margin-bottom: 20px;
+  
+}
+.port img{
+  margin: 10px 0px 10px 0px;
+}
+.img_igu{
+  box-shadow: 0px -20px 0px 10px rgb(241 166 0);
+  
+}
+.portafo_dos{
+  box-shadow: 0px -20px 0px 10px #242635;
 }
 }
 
