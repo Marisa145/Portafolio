@@ -50,7 +50,7 @@ ul li a:hover {
 }
 
 @media (min-width: 360px){
-
+  
   ul li {
     width: 100%;
     padding: 15px;
@@ -105,14 +105,22 @@ body,
 .hide{
   background-image: url('./vectores/Rectangle\ 34-1.svg');
   background-repeat:no-repeat;
-  background-position: top right; 
+  background-position: top right;
+  
+  
+
 }
 span a{
   color: #F1A600;
 }
-.section_dos{
+ .section_dos{
   background-image: url('./vectores/rectangle\ 33-1.svg');
   text-align: center;
+  
+} 
+h2,
+p,
+div{
   margin: var(--mr-1);
 }
 .section_tres{
