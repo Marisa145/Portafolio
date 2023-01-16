@@ -48,6 +48,92 @@ a {
 ul li a:hover {
   color: #F1A600;
 }
+.perfil{
+  width: 300px;
+  height:430px;
+  margin-top: 40px;
+  margin-right: 50px;
+
+}
+.logo{
+  height: 50px;
+  float: left;
+}
+.technology div span {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.technology {
+  justify-content: center;
+  max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    margin-left:70px;
+}
+
+.react:hover {
+  transform: scale(1.2);
+}
+.fa-brands{
+  margin-left: 25px;
+}
+
+.img-technology {
+  width: 120px;
+  
+}
+.card footer {
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 0;
+  height: 200px;
+  background-color: #242635;
+  position: absolute;
+  top: 0;
+  transition: all 400ms ease-in-out;
+  text-align: center;
+  margin-top: 3.8rem;
+  flex-direction: row;
+  gap: 3rem;
+}
+.card footer p {
+  padding-top: 1rem;
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  color:#FFFFFF;
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  margin-top: -2.5rem;
+  text-align: justify;
+  font-size: 18px;
+}
+.card footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10.5rem;
+  font-size: 35px;
+  text-decoration-style: none;
+  color:white;
+}
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.card:hover footer {
+  width: 377px;
+  height: 200px;
+}
 
 @media (min-width: 360px){
   
@@ -77,9 +163,9 @@ ul li a:hover {
   }
   ul li {
     display: inline-block;
-    padding: 20px;
     transition: all  250ms;
   }
+ 
   .section_uno{
     text-align: center;
     margin: var(--mr-4);
@@ -92,24 +178,18 @@ ul li a:hover {
   
   }
   .redes{
-
    text-align: center;
    justify-content: center;
+
   }
+ 
 .social{
   text-align: center;
   display: flex;
-  margin-left: 15px;
+  margin-left: 10px;
+  
 }
-body,
-.hide{
-  background-image: url('./vectores/Rectangle\ 34-1.svg');
-  background-repeat:no-repeat;
-  background-position: top right;
-  
-  
 
-}
 span a{
   color: #F1A600;
 }
@@ -133,6 +213,7 @@ div{
   gap:10%;
 
 }
+
 
 .empresa{
   display: inline-block;
@@ -160,6 +241,9 @@ div{
   background-position: left;
   background-size: 50%;
 }
+.section_cuatro{
+  text-align: center;
+}
 .section_cinco{
   text-align: center;
   
@@ -167,7 +251,8 @@ div{
 
 footer {
   text-align: center;
-  background-image: url('./vectores/Rectangle\ 34.svg');
+  background-color: #242635;
+  height: 200px;
  
 }
 .portafo{
@@ -187,15 +272,31 @@ footer {
 }
 
 @media (min-width: 800px){
-  body,
-  nav,
-  html
-
-{
-  background-image: url('./vectores/Rectangle\ 34-1.svg');
-  background-position: top right;
-  background-size: 30% ;
+  .grid {
+    display: grid;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    grid-template-columns: repeat(2, 1fr);
 }
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  gap: 2rem;
+}
+.img_card{
+  min-width: 450px;
+  height: 300px;
+  border-radius: 5%;
+    display: grid;
+ 
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
 .hide{
   display: none;
 }
@@ -219,23 +320,22 @@ nav ul {
   
    
 }
- ul li{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-end;
-}
+
 
 .section_uno{
- columns: 2;
+  display: grid;
+
  text-align: center;
  margin: var(--mr-6);
  
 }
+
 h1{
   font-size: var(--big-font-desktop);
 }
 .perfil{
   float: right;
+  border-radius: 15px;
 }
 span a {
   color: #F1A600;
@@ -247,16 +347,21 @@ span a {
 }
 .name{
   text-align: center;
-  margin-top: 35px;
+  float: left;
+  margin-left: 15px;
 }
 .redes{
   display: grid;
   columns: 3;
+  float: left;
+  justify-content: center;
+  margin-left: 80px
 }
 .social{
   text-align: center;
   display: flex;
   margin-left: 5px;
+  float: left;
   
 }
 .redes_click{
@@ -294,6 +399,7 @@ p{
   grid-column: 1/2;
   grid-row: 2/3;
 }
+
 .contacto{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -308,5 +414,30 @@ p{
   background-image: url('./vectores/Rectangle\ 34-1.svg');
   background-position: left;
   background-size: 50%;
+}
+.img-technology {
+  width: 120px;
+  object-fit: contain;
+  animation: move 3s infinite;
+  animation-delay: 1000ms;
+  animation-name: technology;
+}
+.card footer {
+  height: 450px;
+  margin-top: 4.8rem;
+  background-color: #242635;
+}
+.card footer p {
+  font-size: 20px;
+  width: 350px;
+  margin-top: -5.5rem;
+}
+.card footer a {
+  margin-top: 11.5rem;
+  font-size: 50px;
+}
+.card:hover footer {
+  width: 480px;
+  height: 300px;
 }
 }

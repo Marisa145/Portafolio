@@ -6,19 +6,20 @@
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/iconomoon/fonts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7bf70dab46.js"></script>
-
+    
   </head>
   
   <body>
     <header>
     <nav class="nav" >
       <ul class="menu_lista">
+        <li><a href="#pres"> <img src="./assets/css/Logos-Imágenes/logo de portfolio definitivo.png" class="logo"></a></li>
         <li><a href="#pres"  rel="noopener noreferrer">Home</a></li>
         <li><a href="#yo"  rel="noopener noreferrer">Acerca de mi</a></li>
-        <li><a href="#exp"  rel="noopener noreferrer">Experiencia</a></li>
         <li><a href="#habi"   rel="noopener noreferrer">Mis habilidades</a></li>
-        <li><a href="#porta"  rel="noopener noreferrer">Mi portafolio</a></li>
+        <li><a href="#porta"  rel="noopener noreferrer">Proyectos</a></li>
         <li><a href="#contac"  rel="noopener noreferrer">Contacto</a></li>
 
       </ul>
@@ -29,22 +30,24 @@
   </header><br>
   <main>
   <section class="section_uno" id="pres">
-    <div class="presentacion"><br>
+    <div class="presentacion"><br><br><br>
     <div class="name">
     <h1 >Marisa Mamani</h1>
     <p>Soy una persona apasionada por la tecnología y la programación. </p>
   </div>
-    <div class="perfil">
-      <img src="assets/css/Logos-Imágenes/perfil_fi.png" alt="perfil">
-    </div>
+  <div class="perfil">
+    <img src="assets/css/Logos-Imágenes/perfil_fi.png" alt="perfil">
+  </div>
+    
     <div class="redes">
-      <p class="span">Podes descargar mi curriculum haciendo click<span> <a href="./assets/css/MARISA MAMANI--curriculo (1).pdf" target="_blank" rel="noopener noreferrer">aqui</a></span> </p>
+      <p class="span">Podes descargar mi curriculum haciendo click<span> <a href="./assets/css/Cv-Mamani Marisa.pdf" target="_blank" rel="noopener noreferrer">aqui</a></span> </p>
       <ul class="social">
-      <li><a href="https://www.linkedin.com/in/marisa-mamani-414469217/"><img class="redes_click"src="assets/css/iconos/linkedin.svg" alt="linkedin"></a></li>
-      <li><a href="https://www.instagram.com/marisamamani_/"><img class="redes_click"src="assets/css/iconos/instagram.svg" alt="instagram"></a></li>
-      <li><a href="https://www.instagram.com/marisamamani_/"><img class="redes_click"src="assets/css/iconos/twitter.svg" alt="twitter"></a></li>
+      <li><a href="https://www.linkedin.com/in/marisa-mamani-414469217/"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/marisamamani_/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://github.com/Marisa145?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
     </ul>
     </div>
+    
   </div>
   </section>
   <section id="yo" class="section_dos"><br><br><br>
@@ -63,59 +66,136 @@
     </div>
   </div><br>
   </section>
-  <section class="section_tres" id="exp"><br><br>
-    <h2 class="sub" >Experiencia</h2>
-    <div class="primer_div">
-    <div class="empresa">
-      <img src="assets/css/iconos/amazon.svg" alt="amazon" class="img_emp"></div>
-    <div class="datos">
-       <h3>Amazon</h3>
-      <p>UI Designer</p>
-      <p>2015-2017</p>
-    </div> 
-    <div class="años">
-      <p>2 años</p>
-    </div>
-  </div>
-  <div class="primer_div">
-    <div class="empresas">
-      <img src="assets/css/iconos/airbnb.svg" alt="airbnb" class="img_emp">
-      </div>
-      <div class="datos">
-      <h3>Airbnb</h3>
-      <p>Senior UX/UI</p>
-      <p>2017-2018</p>
-    </div>
-    <div class="años">
-      <p>1 año</p>
-    </div>
-  </div>
-    <div  class="primer_div">
-      <div class="empresa">
-      <img src="assets/css/iconos/google.svg" alt="google" class="img_emp">
-      </div>
-      <div class="datos-un">
-      <h3 >Google</h3>
-      <p>Productr Designer</p>
-      <p>2018-act</p>
-    </div>
-    <div class="años">
-      <p>2 años</p>
-    </div>
-    </div> 
-  </section><br>
   <section class="section_cuatro" id="habi">
-    <div class="div_len" ><br><br>
-    <h2 class="sub" >Mis habilidades</h2>
-    <img src="assets/css/Logos-Imágenes/HTML-CSS-y-JavaScript-el-estándar-universal.png" alt="logo_html" class="img_len"></div>
+    <div>
+      <h2 class="sub" >Mis tecnologias</h2>
+    </div> <br><br>
+    
+    <div class="technology">
+      <div>
+        <span>React</span>
+        <img data-aos="flip-right" class="img-technology react aos-init" src="./assets/css/Logos-Imágenes/kisspng-react-javascript-responsive-web-design-github-angu-github-5accac250cda95.4452823815233628530527.png" alt="react-logo">
+      </div>
+      <div>
+        <span>Redux</span>
+        <img data-aos="flip-right" class="img-technology react aos-init" src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="redux-logo">
+      </div>
+      <div>
+        <span>React Router</span>
+        <img data-aos="flip-right" class="img-technology react aos-init aos-init" src="https://reacttraining.com/images/logo-icon-512.png" alt="reactRouter-logo">
+      </div>
+      <div>
+        <span>JavaScript</span>
+        <img data-aos="flip-right" class="img-technology react aos-init aos-animate" src="https://zaidakary.github.io/Portafolio/imagenes/javascript.jpg" alt="javascript-logo">
+      </div>
+      <div>
+        <span>HTML</span>
+        <img data-aos="flip-right" class="img-technology react aos-init" src="https://icon-library.com/images/html5-icon/html5-icon-13.jpg" alt="html-logo">
+      </div>
+      <div>
+        <span>CSS</span>
+        <img data-aos="flip-right" class="img-technology react aos-init" src="https://icons-for-free.com/download-icon-css3+internet+style+technology+web+website+icon-1320192729058533072_0.svg" alt="css-logo">
+      </div>
+      <div>
+        <span>Git</span>
+        <img data-aos="flip-right" class="img-technology react aos-init" src="https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png" alt="git-logo">
+      </div>
+      <div>
+        <span>GitHub</span>
+        <img data-aos="flip-right" class="img-technology react aos-init" src="https://datacuber.cl/images/github/github.png" alt="github-logo">
+      </div>
+    </div>
+    
   </section>
   <section class="section_cinco" id="porta"><br><br>
-    <h2 class="sub" >Portafolio</h2><br>
-    <div class="port">
-    <div class="portafo"><img src="assets/css/Logos-Imágenes/image 9-1.jpg" class="img_igu" alt="primero" ></div>
-    <div ><img src="assets/css/Logos-Imágenes/image 10.jpg" alt="segundo" class="portafo_dos"></div><br>
-    <div class="portafo_tres"><img src="assets/css/Logos-Imágenes/image 11.jpg" class="img_igu" alt="tercera"></div>
+    <h2 class="sub" >Proyectos</h2><br>
+    <div class="grid">
+    <div class="projects card">
+      <h2>Pokedex</h2>
+      <img  data-aos="flip-left" src="/assets/css/Logos-Imágenes/pokedex.png" class="img_card" alt="">
+      <footer>
+        <p>
+          Construida con las tecnologias: React, Redux, React Router,
+          javaScript, HTML, CSS, ocupando la POKEAPI para desarrollarla, nos
+          muestra una guia de stats de diversos Pokemon. Tecnologias
+          utilizadas React, Redux, React Router, HTML y CSS.
+        </p>
+        <a target="_blank" href="https://github.com/Marisa145/pokeApi"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://dynamic-empanada-87de2a.netlify.app/"><i class="fa-solid fa-globe"></i></a>
+      </footer>
+    </div>
+    <div class="projects card">
+      <h2>Crud</h2>
+      <img  data-aos="flip-left"  src="/assets/css/Logos-Imágenes/crud.png" class="img_card" alt="">
+      <footer>
+        <p>
+          Proyecto donde ocupe herramientas de React con Axios mientras se
+          consume una API con los metodos Get, Post, Delete. Tecnologias
+          utilizadas React, HTML y CSS.
+        </p>
+        <a target="_blank" href="https://github.com/Marisa145/entregablecuatro_userscrud"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://entregable4-user-card.netlify.app/"><i class="fa-solid fa-globe"></i></a>
+      </footer>
+    </div>
+    <div class="projects card">
+      <h2>App Clima</h2>
+      <img data-aos="flip-left"  src="/assets/css/Logos-Imágenes/appclima.png" class="img_card" alt="">
+      <footer>
+        <p>
+          Construida para mostrar los datos del tiempo en tu localizacion
+          ocupa una API que permite interactuar con estos datos. Tecnologias
+          utilizadas React, HTML y CSS.
+        </p>
+        <a target="_blank" href="https://github.com/Marisa145/app_clima"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://entregable2appclima.netlify.app/"><i class="fa-solid fa-globe"></i></a>
+      </footer>
+    </div>
+    <div class="projects card">
+      <h2>Rick and Morty</h2>
+      <img data-aos="flip-left"  src="/assets/css/Logos-Imágenes/ram.png" class="img_card" alt="">
+      <footer>
+        <p>
+          Concebida a partir del consumo de una API, ostenta paginacion para
+          separar la cantidad de personajes a mostrar en pantalla, asi como
+          sus caracteristicas, cuenta con una barra para busqueda
+          personalizada por id de cada planeta. Tecnologias utilizadas
+          React, Axios, HTML y CSS.
+        </p>
+        <a target="_blank" href="https://github.com/Marisa145/entregable3_rickyandmorty"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://entregable3rickyandmorty.netlify.app"><i class="fa-solid fa-globe"></i></a>
+      </footer>
+    </div>
+    <div class="projects card">
+      <h2>Frases Celebres</h2>
+      <img  data-aos="flip-left"  src="/assets//css/Logos-Imágenes/frases.png" class="img_card" alt="">
+      <footer>
+        <p>
+          Proyecto realizado a partir de un archivo JSON, donde nos comparte
+          frases celebres de algunos visionarios del pasado, al cambiar la
+          frase se le asigna un nuevo color al estilo mostrado en pantalla,
+          React, HTML y CSS
+        </p>
+        <a target="_blank" href="https://github.com/Marisa145/Entregable1-Marisa"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://entregable1-marisa.netlify.app/"><i class="fa-solid fa-globe"></i></a>
+      </footer>
+    </div>
+    <div class="projects card">
+      <h2>Ecommerce JavaScript</h2>
+      <img data-aos="flip-left"  src="/assets/css/Logos-Imágenes/ecorjs.png"  class="img_card" alt="">
+      <footer>
+        <p>
+          Proyecto creado con la finalidad de mostrar articulos de una
+          tienda, posee un carrito de compras donde se pueden cargar estos
+          productos ocupando para ello "local storage", para almacenar la
+          informacion del usuario, Tecnologias utilizadas JavaScript
+          Vanilla, HTML y CSS.
+        </p>
+        <a target="_blank" href="https://github.com/erickseis/Ecommerce-Vanilla-JavaScript"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://ecommercelocalstorage.netlify.app/"><i class="fa-solid fa-globe"></i></a>
+      </footer>
+    </div>
   </div>
+    
   </section><br>
 </main>
   <footer><br>
@@ -130,16 +210,39 @@
     <div class="contacto_dos">
       <img src="assets/css/iconos/mail.svg" alt="mail" class="img_con">
       <h3>Email</h3>
-      <p>marisa0199914@gmail.com</p>
+      <a href="mailto:marisa0199914@gmail.com">marisa0199914@gmail.com</a>
     </div>
   </div><br>
   </div>
   
-    <p>Hecho con ❤ en Academlo</p><br>
   </footer>
 
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+     AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script >
     $(".hide").on('click', function() {
