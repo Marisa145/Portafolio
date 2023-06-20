@@ -137,6 +137,11 @@ a:-webkit-any-link {
   width: 377px;
   height: 200px;
 }
+.parrafos{
+ justify-content: center;
+  display: flex;
+  gap: 140px;
+}
 
 @media (min-width: 360px){
   
@@ -271,6 +276,10 @@ footer {
 }
 .portafo_dos{
   box-shadow: 0px -20px 0px 10px #242635;
+}
+.perfil{
+  align-items: center;
+  justify-content: center;
 }
 }
 
